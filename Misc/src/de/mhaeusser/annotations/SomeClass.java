@@ -1,6 +1,9 @@
 package de.mhaeusser.annotations;
 
-// see https://stackoverflow.com/questions/918393/whats-the-difference-between-interface-and-interface-in-java
+import java.lang.annotation.Annotation;
+import java.lang.reflect.AnnotatedElement;
+
+// see http://docs.oracle.com/javase/tutorial/java/annotations/declaring.html
 
 @interface ClassPreamble {
     String author();
@@ -14,4 +17,11 @@ package de.mhaeusser.annotations;
 
 @ClassPreamble(author = "John Doe", date = "2019-02-26", currentRevision=2, reviewers = { "Tarzan", "Jane" })
 public class SomeClass {
+
+    public static void main(String[] args) {
+    	Annotation[] annotations = new SomeClass().getClass().getDeclaredAnnotations();
+        for (Annotation annotation : annotations) {
+            System.out.println(annotation);
+        }
+    }
 }

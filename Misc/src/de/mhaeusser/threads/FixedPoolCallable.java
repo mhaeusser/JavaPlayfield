@@ -1,4 +1,4 @@
-package de.mhaeusser.misc.threads;
+package de.mhaeusser.threads;
 
 import java.io.File;
 import java.util.ArrayList;

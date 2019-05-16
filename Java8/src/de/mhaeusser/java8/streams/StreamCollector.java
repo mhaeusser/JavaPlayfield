@@ -15,7 +15,9 @@ public class StreamCollector {
                     .collect(Collectors.toSet()));
         }
         joinedList.addAll(secondList);
-        return joinedList.stream().collect(Collectors.joining(","));
+        //return joinedList.stream().collect(Collectors.joining(","));
+        //more efficient:
+        return String.join(",", joinedList);
     }
 
     public static void main(String[] args) {

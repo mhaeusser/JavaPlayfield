@@ -15,9 +15,8 @@ import java.util.LinkedHashMap;
 public class HashMapIterationOrderExample {
 
     public static void main(String[] args) {
-        /**
-         * Using HashMap
-         */
+
+        // Using HashMap
         System.out.println("Using plain hash map using linked lists in java 7:");
 
         HashMap<String, String> stringMap = new HashMap<>();
@@ -30,9 +29,7 @@ public class HashMapIterationOrderExample {
             System.out.println(string);
         }
 
-        /**
-         * Using HashMap
-         */
+        // Using HashMap
         System.out.println("using LinkedHashMap with linked lists:");
 
         LinkedHashMap<String, String> linkedHashMap = new LinkedHashMap<>();

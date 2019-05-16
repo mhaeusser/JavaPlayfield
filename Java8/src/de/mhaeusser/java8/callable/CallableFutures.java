@@ -15,7 +15,7 @@ public class CallableFutures {
     public static void main(String[] args) {
 
         ExecutorService executor = Executors.newFixedThreadPool(NUM_THREADS);
-        List<Future<Long>> list = new ArrayList<Future<Long>>();
+        List<Future<Long>> list = new ArrayList<>();
         for (int i = 0; i < 20000; i++) {
             Callable<Long> worker = new MyCallable();
             Future<Long> submit = executor.submit(worker);
@@ -27,9 +27,7 @@ public class CallableFutures {
         for (Future<Long> future : list) {
             try {
                 sum += future.get();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (ExecutionException e) {
+            } catch (InterruptedException | ExecutionException e) {
                 e.printStackTrace();
             }
         }

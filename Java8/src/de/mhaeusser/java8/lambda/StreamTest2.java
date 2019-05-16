@@ -27,7 +27,7 @@ public class StreamTest2 {
 
     public static void goNew() {
 
-        int sum1 = numbers.stream().mapToInt(i -> i.intValue()).sum();
+        int sum1 = numbers.stream().mapToInt(i -> i).sum();
         System.out.println("sum1: " + sum1);
 
         int sum2 = numbers.stream().mapToInt(Integer::intValue).sum();

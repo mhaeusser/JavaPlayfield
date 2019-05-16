@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class LambdaFilterTest {
 
     public static List<Person> initPersonen() {
-        List<Person> personen = new ArrayList<Person>();
+        List<Person> personen = new ArrayList<>();
         Person p1 = new Person("John", "Doe", 28, "70771", "Leinfelden");
         personen.add(p1);
         Person p2 = new Person("Jane", "Doe", 40, "70199", "Stuttgart");
@@ -26,7 +26,7 @@ public class LambdaFilterTest {
     }
 
     public <T> List<T> filtern(List<T> liste, Filter<T> filter) {
-        List<T> treffer = new ArrayList<T>();
+        List<T> treffer = new ArrayList<>();
         for (T e : liste) {
             if (filter.istErfuellt(e)) {
                 treffer.add(e);

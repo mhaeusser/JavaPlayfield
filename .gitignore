@@ -12,5 +12,6 @@
 *.tar.gz
 *.rar
 
+out
 bin
 target

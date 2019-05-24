@@ -1,6 +1,6 @@
 package de.mhaeusser.designpatterns.builder;
 
-public class Runner {
+public class Main {
 
     public static void main(String[] args) {
 

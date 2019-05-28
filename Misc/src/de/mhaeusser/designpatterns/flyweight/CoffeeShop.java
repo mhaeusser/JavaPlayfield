@@ -1,10 +1,11 @@
 package de.mhaeusser.designpatterns.flyweight;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /** from https://en.wikipedia.org/wiki/Flyweight_pattern */
 class CoffeeShop {
-    private final ArrayList<Order> orders = new ArrayList<>();
+    private final List<Order> orders = new ArrayList<>();
 
     public void takeOrder(String flavour, int tableNumber) {
         orders.add(Order.of(flavour, tableNumber));

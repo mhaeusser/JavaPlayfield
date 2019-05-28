@@ -2,6 +2,7 @@ package de.mhaeusser.designpatterns.flyweight;
 
 /** from https://en.wikipedia.org/wiki/Flyweight_pattern */
 public class FlyweightExample {
+
     public static void main(String[] args) {
         var shop = new CoffeeShop();
         shop.takeOrder("Cappuccino", 2);
@@ -18,6 +19,6 @@ public class FlyweightExample {
         shop.takeOrder("Espresso", 121);
 
         shop.service();
-        System.out.println("CoffeeFlavor objects in cache: " + CoffeeFlavour.flavoursInCache());
+        System.out.println("CoffeeFlavor objects in cache: " + CoffeeFlavour.numFlavoursInCache());
     }
 }

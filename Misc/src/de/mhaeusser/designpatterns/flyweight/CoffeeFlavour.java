@@ -4,6 +4,7 @@ import java.util.WeakHashMap;
 
 /** from https://en.wikipedia.org/wiki/Flyweight_pattern */
 class CoffeeFlavour {
+
     private final String name;
     private static final WeakHashMap<String, CoffeeFlavour> CACHE = new WeakHashMap<>();
 
@@ -23,7 +24,7 @@ class CoffeeFlavour {
         }
     }
 
-    public static int flavoursInCache() {
+    public static int numFlavoursInCache() {
         synchronized (CACHE) {
             return CACHE.size();
         }

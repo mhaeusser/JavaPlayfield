@@ -16,7 +16,7 @@ class PredicateTest {
         dump(names, startsPred);
         Predicate<String> lengthPred = (s) -> s.length() < 3;
         dump(names, lengthPred);
-        Predicate<String> lengthNotPred = lengthPred.negate();
+        Predicate<String> lengthNotPred = lengthPred.negate(); // Predicate.not(lengthPred);
         dump(names, lengthNotPred);
         Predicate<String> startsAndLengthPred = startsPred.and(lengthPred);
         dump(names, startsAndLengthPred);

@@ -1,6 +1,6 @@
 package de.mhaeusser.designpatterns.strategy;
 
-/** From https://www.tutorialspoint.com/design_pattern/strategy_pattern.htm */
+/** from https://www.tutorialspoint.com/design_pattern/strategy_pattern.htm */
 public class StrategyPatternDemo {
 
     public static void main(String[] args) {

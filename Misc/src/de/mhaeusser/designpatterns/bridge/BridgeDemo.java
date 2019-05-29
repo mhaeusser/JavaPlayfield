@@ -1,6 +1,6 @@
 package de.mhaeusser.designpatterns.bridge;
 
-/** From https://en.wikipedia.org/wiki/Bridge_pattern#Java */
+/** from https://en.wikipedia.org/wiki/Bridge_pattern#Java */
 public class BridgeDemo {
 
     public static void main(String[] args) {

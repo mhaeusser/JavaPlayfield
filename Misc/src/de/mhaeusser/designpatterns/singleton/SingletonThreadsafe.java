@@ -1,6 +1,6 @@
 package de.mhaeusser.designpatterns.singleton;
 
-/** From https://en.wikipedia.org/wiki/Singleton_pattern#Lazy_initialization,
+/** from https://en.wikipedia.org/wiki/Singleton_pattern#Lazy_initialization,
     thread-safe implementation using lazy initialization with double-checked locking */
 public final class SingletonThreadsafe {
 

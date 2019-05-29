@@ -9,14 +9,26 @@ class PredicateTest {
     public static void main(String args[]) {
 
         // create a list of strings 
-        List<String> names = Arrays.asList("Geek", "GeeksQuiz", "g1", "QA", "Geek2");
+        List<String> names = Arrays.asList("Geek", "GeeksQuiz", "g1", "QA", "GG", "Geek2");
 
         // declare the predicate type as string and use a lambda expression
-        Predicate<String> p = (s) -> s.startsWith("G");
+        Predicate<String> startsPred = (s) -> s.startsWith("G");
+        dump(names, startsPred);
+        Predicate<String> lengthPred = (s) -> s.length() < 3;
+        dump(names, lengthPred);
+        Predicate<String> lengthNotPred = lengthPred.negate();
+        dump(names, lengthNotPred);
+        Predicate<String> startsAndLengthPred = startsPred.and(lengthPred);
+        dump(names, startsAndLengthPred);
+        Predicate<String> startsOrLengthPred = startsPred.or(lengthPred);
+        dump(names, startsOrLengthPred);
+    }
 
-        for (String name : names) {
-            if (p.test(name))
+    public static void dump(List<String> strings, Predicate<String> pred) {
+        for (String name : strings) {
+            if (pred.test(name))
                 System.out.println(name);
         }
+        System.out.println();
     }
 }

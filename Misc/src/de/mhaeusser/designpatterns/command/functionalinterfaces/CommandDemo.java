@@ -1,5 +1,6 @@
 package de.mhaeusser.designpatterns.command.functionalinterfaces;
 
+/** from https://en.wikipedia.org/wiki/Command_pattern#Java */
 public class CommandDemo {
 
     public static void main(final String[] arguments) {

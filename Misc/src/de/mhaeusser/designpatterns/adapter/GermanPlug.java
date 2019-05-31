@@ -1,6 +1,6 @@
 package de.mhaeusser.designpatterns.adapter;
 
-public interface GermanPlugConnector {
+public interface GermanPlug {
 
     public void giveElectricity();
 }

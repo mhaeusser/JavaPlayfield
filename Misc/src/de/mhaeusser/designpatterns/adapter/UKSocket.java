@@ -1,8 +1,8 @@
 package de.mhaeusser.designpatterns.adapter;
 
-public class UKElectricalSocket {
+public class UKSocket {
 
-    public void plugIn(UKPlugConnector plug) {
+    public void plugIn(UKPlug plug) {
         plug.provideElectricity();
     }
 }

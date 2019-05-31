@@ -1,15 +1,15 @@
 package de.mhaeusser.designpatterns.adapter;
 
-public class GermanToUKAdapter implements UKPlugConnector {
+public class GermanToUKAdapter implements UKPlug {
 
-    private GermanPlugConnector plug;
+    private GermanPlug germanPlug;
 
-    public GermanToUKAdapter(GermanPlugConnector plug) {
-        this.plug = plug;
+    public GermanToUKAdapter(GermanPlug germanPlug) {
+        this.germanPlug = germanPlug;
     }
 
     @Override
     public void provideElectricity() {
-        plug.giveElectricity();
+        germanPlug.giveElectricity();
     }
 }

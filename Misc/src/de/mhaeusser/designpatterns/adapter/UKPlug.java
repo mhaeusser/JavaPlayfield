@@ -1,6 +1,6 @@
 package de.mhaeusser.designpatterns.adapter;
 
-public interface UKPlugConnector {
+public interface UKPlug {
 
     public void provideElectricity();
 }

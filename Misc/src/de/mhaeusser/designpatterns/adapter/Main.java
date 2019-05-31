@@ -1,12 +1,15 @@
 package de.mhaeusser.designpatterns.adapter;
 
+import javax.xml.transform.sax.SAXSource;
+
 /** from https://www.vogella.com/tutorials/DesignPatternAdapter/article.html */
 class Main {
 
     public static void main(String[] args) {
-        GermanPlugConnector plugConnector = new GermanPlugConnectorImpl();
-        UKElectricalSocket electricalSocket = new UKElectricalSocket();
-        UKPlugConnector ukAdapter = new GermanToUKAdapter(plugConnector);
-        electricalSocket.plugIn(ukAdapter);
+        GermanPlug germanPlug = new GermanPlugImpl();
+        UKSocket ukSocket = new UKSocket();
+        UKPlug ukAdapter = new GermanToUKAdapter(germanPlug);
+        System.out.println("Plugging adapter into UK socket.");
+        ukSocket.plugIn(ukAdapter);
     }
 }

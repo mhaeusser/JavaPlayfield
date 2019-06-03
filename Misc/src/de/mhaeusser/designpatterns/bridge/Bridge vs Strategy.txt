@@ -1,3 +1,11 @@
 See
 https://stackoverflow.com/questions/464524/what-is-the-difference-between-the-bridge-pattern-and-the-strategy-pattern
 https://stackoverflow.com/questions/5863530/strategy-vs-bridge-patterns
+
+
+The UML class diagrams are identical!
+Strategy pattern: behavior
+you have more ways for doing an operation; you can choose the algorithm at run-time and you can modify a single Strategy without a lot of side-effects at compile-time
+
+Bridge pattern: structure
+you can split the hierarchy of interface and class, join it with an abstract reference

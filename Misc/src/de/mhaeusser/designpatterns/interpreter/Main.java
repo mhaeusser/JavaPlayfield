@@ -38,6 +38,6 @@ public class Main {
         var expr = parse("w x z - +");
         var context = Map.of("w", 5, "x", 10, "z", 42);
         var result = expr.interpret(context);
-        System.out.println(result);    // -27
+        System.out.println(result); // -27
     }
 }

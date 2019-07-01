@@ -1,4 +1,4 @@
-package de.mhaeusser.flatmap;
+package de.mhaeusser.java8.flatmap;
 
 import java.util.HashSet;
 import java.util.Set;

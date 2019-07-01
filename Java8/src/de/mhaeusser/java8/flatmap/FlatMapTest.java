@@ -1,4 +1,4 @@
-package de.mhaeusser.flatmap;
+package de.mhaeusser.java8.flatmap;
 
 import org.junit.jupiter.api.Test;
 

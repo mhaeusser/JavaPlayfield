@@ -5,10 +5,10 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class Main {
-    private static final int NTHREDS = 10;
+    private static final int NUM_THREADS = 10;
 
     public static void main(String[] args) throws InterruptedException {
-        ExecutorService executorService = Executors.newFixedThreadPool(NTHREDS);
+        ExecutorService executorService = Executors.newFixedThreadPool(NUM_THREADS);
         for (int i = 0; i < 500; i++) {
             Runnable worker = new MyRunnable(10000000L + i);
             executorService.execute(worker);

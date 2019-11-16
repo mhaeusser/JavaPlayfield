@@ -5,5 +5,5 @@ import java.rmi.RemoteException;
 
 public interface RmiServerIntf extends Remote {
 
-    String getMessage() throws RemoteException;
+    String getMessage(String name) throws RemoteException;
 }

@@ -7,14 +7,12 @@ import java.rmi.registry.*;
 
 public class RmiServer extends UnicastRemoteObject implements RmiServerIntf {
 
-    public static final String MESSAGE = "Hello World, says the server.";
-
     public RmiServer() throws RemoteException {
         super(0); // required to avoid the 'rmic' step, see below
     }
 
-    public String getMessage() {
-        return MESSAGE;
+    public String getMessage(String name) {
+        return "Hello " + name;
     }
 
     public static void main(String args[]) throws Exception {

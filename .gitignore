@@ -1,8 +1,17 @@
+SpringInAction5
+gs-rest-service
+
+.mvn
+
 *.class
 
 *.log
 
+### IntelliJ IDEA ###
 .idea
+*.iws
+*.iml
+*.ipr
 
 *.jar
 *.war
